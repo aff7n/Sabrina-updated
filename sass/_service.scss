@@ -1,0 +1,111 @@
+.service {
+    // background-color: #eee;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 150rem;
+        padding: 10rem 0;
+    }
+
+    &__top {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 5rem;
+        letter-spacing: .2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        margin: 0 1.5rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: 10rem 3rem;
+        height: 33rem;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        padding: 3rem;
+        border-radius: 5px;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        transition: all .2s;
+        cursor: pointer;
+        box-shadow: 0 0 1.2rem rgba(#000, 0.6);
+
+        &:hover {
+            transform: scale(0.96);
+            box-shadow: none;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(60deg, #9ea3a8 0%, #485563 100%);
+            opacity: .6;
+            z-index: -1;
+        }
+        
+        /*
+        i {
+            font-size: 5.5rem;
+            color: $color-primary;
+            object-fit: cover;
+        }
+        */
+
+        h2 {
+            font-size: 2.3rem;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /*
+        p {
+            margin-top: 0rem;
+            font-weight: 500;
+            letter-spacing: .1rem;
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 0 3rem;
+        }
+        */
+    }
+
+    &__glass-1 {
+        background: url(/img/anne-nygard-N82NeNvf5DM-unsplash.jpg);
+        background-size: cover;
+    }
+
+    &__glass-2 {
+        background: url(/img/charles-deluvio-1-nx1QR5dTE-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__hover-scl {
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}

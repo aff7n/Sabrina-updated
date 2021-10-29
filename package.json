@@ -1,0 +1,20 @@
+{
+  "name": "domanga",
+  "version": "1.0.0",
+  "description": "landing page for domanga",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css -w"
+  },
+  "author": "affan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^3.1.3"
+  }
+}

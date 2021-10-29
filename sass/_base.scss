@@ -1,0 +1,28 @@
+// COLOR VARIABLES
+$color-primary: #41ffff;
+$color-primary-2: #00ffd5;
+$color-primary-low-opacity: #00ffd567;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px 
+    font-family: nunito, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #eedad9;
+}
+
+// Breakpoints
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
