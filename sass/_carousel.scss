@@ -1,6 +1,7 @@
 #container {
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -105,7 +106,12 @@
     margin-left: 10px;
     margin-right: 10px;
     z-index: 1;
-    transition: all 1s;  
+    transition: all 1s;
+
+    @media (max-width: $phone) {
+      height: 280px;
+      width: 200px;
+    }
   }
   
   #mainView:hover {
@@ -125,6 +131,10 @@
     justify-content: center;
     align-items: center;
     transition: all 1s;  
+
+    @media (max-width: $phone) {
+      height: 220px;
+    }
   }
   
   #leftView:hover {
@@ -144,6 +154,10 @@
     justify-content: center;
     align-items: center;
    transition: all 1s;
+
+   @media (max-width: $phone) {
+     height: 220px;
+   }
   }
   
   #rightView:hover {
@@ -167,6 +181,10 @@
     opacity: 1;
     transition: all 1s;
     background-color: #eb9100;
+
+    @media (max-width: $phone) {
+      background: none;
+    }
   }
   
   #navLeft {

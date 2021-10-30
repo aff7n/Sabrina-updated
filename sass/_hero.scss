@@ -3,10 +3,10 @@
     background-size: cover;
     background-position: top center;
     position: relative;
+    overflow: hidden;
     z-index: 1;
 
     @media (max-width: $phone) {
-        background-image: none;
         
     }
 

@@ -23,6 +23,7 @@ html {
   left: 0;
   top: 0;
   z-index: 1000;
+  overflow: hidden;
   -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
   /* h1 {
@@ -139,13 +140,8 @@ html {
   background-size: cover;
   background-position: top center;
   position: relative;
+  overflow: hidden;
   z-index: 1;
-}
-
-@media (max-width: 480px) {
-  .hero {
-    background-image: none;
-  }
 }
 
 .hero__container {
@@ -333,7 +329,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 10rem 0;
+  padding: 10rem 0 3rem 0;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -344,14 +340,15 @@ html {
 }
 
 .project__title {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .2rem;
+  color: #29323c;
 }
 
 .project__title span {
-  color: #33a0ff;
+  color: #fff;
 }
 
 .project__item {
@@ -623,6 +620,7 @@ html {
 #container {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -764,6 +762,13 @@ html {
   transition: all 1s;
 }
 
+@media (max-width: 480px) {
+  #mainView {
+    height: 280px;
+    width: 200px;
+  }
+}
+
 #mainView:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -792,6 +797,12 @@ html {
           align-items: center;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media (max-width: 480px) {
+  #leftView {
+    height: 220px;
+  }
 }
 
 #leftView:hover {
@@ -823,6 +834,12 @@ html {
   transition: all 1s;
 }
 
+@media (max-width: 480px) {
+  #rightView {
+    height: 220px;
+  }
+}
+
 #rightView:hover {
   opacity: 1;
   -webkit-transition: all 1s;
@@ -846,6 +863,12 @@ html {
   -webkit-transition: all 1s;
   transition: all 1s;
   background-color: #eb9100;
+}
+
+@media (max-width: 480px) {
+  .navBtns:hover {
+    background: none;
+  }
 }
 
 #navLeft {
